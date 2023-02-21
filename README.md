@@ -20,6 +20,6 @@ build
 
 ## Issue
 
-Even with the auth check guard, the `load()` function in `src/routes/app/+page.ts` gets invoked even when the user is not logged in.
+Even with the [auth check](./src/routes/app/%2Blayout.svelte), the `load()` function in `src/routes/app/+page.ts` gets invoked even when the user is not logged in.
 
 This can be confirmed by running the go binary with `-nologin` flag.
